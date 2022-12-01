@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1 {
+    color: gold;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(151, 10, 10);
+    font-weight: bold;
+}
+
+p {
+    color: gold;
+    color: rgb(223, 222, 191);
+
+    text-align: left;
+    margin-top: 15px;
+}
+
+img {
+    margin: 20px;
+    border-radius: 15px;
+    border: 2px solid gold;
+}
+
+#image {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#text {
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+#keyword {}
+
+#yes-no {
+    font-weight: 700;
+}
