@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Oracle Deck</h1>
+    
+    <a href=".">Draw a new card</a>
+
+
+    <div id="card"></div>
+    
+    <script>
+      (function() {
+        var cards = [
+          {
+            title: "Card 1",
+            text: `Text about the deviils doramaar card <br>
+
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore incidunt ex eligendi sint iusto quo numquam, officiis omnis, iste deleniti illum fugiat hic enim mollitia vero quas pariatur provident quod.
+    Voluptatum repudiandae ipsum minima fugiat nulla velit delectus, cupiditate nisi! Nihil fuga dicta voluptas eveniet assumenda deserunt neque, aliquid perspiciatis incidunt ab doloremque quas quos magnam labore rem! Harum, facere?
+            `,
+            img:  "images/devils_doramaar_card_third_time.jpg"
+          },
+          {
+            title: "Card 2",
+            text: "Text about the kristal card ",
+            img:  "images/kristal_card_third_time.jpg",
+          }
+        ];
+        var card = cards[Math.floor(Math.random() * cards.length)];
+        document.getElementById("card").innerHTML =
+        '<img src="' + card.img + '" height=600>' + '<h2>' + card.title + '</h2>'+ '<p>' + card.text + '</p>' ;
+      })();
+    </script>
+    
+
+</body>
+</html>
